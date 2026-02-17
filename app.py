@@ -76,7 +76,10 @@ col_title, col_logo = st.columns([3, 1])
 with col_title:
     st.title("📋 Meeting Feedback")
 with col_logo:
-    st.image("logo-animated.svg", width=150)
+    # Use HTML to embed animated SVG from website
+    st.markdown('''
+        <img src="https://metropointtech.com/logo-animated.svg" width="150" style="margin-top: 10px;">
+    ''', unsafe_allow_html=True)
 
 if not contact_id:
     st.error("⚠️ Invalid survey link. Please use the link from your email.")
