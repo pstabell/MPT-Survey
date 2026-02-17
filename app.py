@@ -19,6 +19,35 @@ st.markdown("""
 <style>
     .main { padding-top: 1rem; }
     .stButton > button { width: 100%; }
+    
+    /* Style multiselect dropdown to be more visible */
+    .stMultiSelect [data-baseweb="select"] {
+        background-color: #f8f9fa;
+        border: 2px solid #dc3545 !important;
+        border-radius: 8px;
+    }
+    
+    /* Dropdown menu styling */
+    .stMultiSelect [data-baseweb="popover"] {
+        background-color: #f8f9fa !important;
+        border: 2px solid #dc3545 !important;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+    }
+    
+    /* Option items in dropdown */
+    .stMultiSelect [role="listbox"] {
+        background-color: #f8f9fa !important;
+    }
+    
+    .stMultiSelect [role="option"] {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .stMultiSelect [role="option"]:hover {
+        background-color: #ffe6e6 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
