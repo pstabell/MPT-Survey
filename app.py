@@ -21,6 +21,9 @@ st.markdown("""
     .block-container { padding-top: 1rem !important; }
     .stButton > button { width: 100%; }
     
+    /* Reduce gap around divider line */
+    hr { margin: 0.5rem 0 !important; }
+    
     /* Dropdown popup menu - make it clearly visible */
     .stMultiSelect [data-baseweb="popover"],
     div[data-baseweb="popover"] {
