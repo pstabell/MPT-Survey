@@ -72,13 +72,13 @@ survey_type = params.get("type", "attendee")  # "attendee" or "host"
 meeting_date = params.get("date", datetime.now().strftime("%Y-%m-%d"))
 
 # Header with logo and title on same row
-col_title, col_logo = st.columns([2, 1])
+col_title, col_logo = st.columns([1, 1])
 with col_title:
     st.title("📋 Meeting Feedback")
 with col_logo:
-    # Use HTML to embed animated SVG from website
+    # Use HTML to embed animated SVG from website - full logo with sun visible
     st.markdown('''
-        <img src="https://metropointtech.com/logo-animated.svg" width="300" style="margin-top: 5px;">
+        <img src="https://metropointtech.com/logo-animated.svg" width="500" style="margin-top: 0; padding-top: 0;">
     ''', unsafe_allow_html=True)
 
 if not contact_id:
