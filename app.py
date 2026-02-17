@@ -17,7 +17,8 @@ st.set_page_config(
 # Custom CSS for clean survey experience
 st.markdown("""
 <style>
-    .main { padding-top: 1rem; }
+    .main { padding-top: 0 !important; }
+    .block-container { padding-top: 1rem !important; }
     .stButton > button { width: 100%; }
     
     /* Dropdown popup menu - make it clearly visible */
@@ -70,12 +71,12 @@ contact_id = params.get("contact_id", "")
 survey_type = params.get("type", "attendee")  # "attendee" or "host"
 meeting_date = params.get("date", datetime.now().strftime("%Y-%m-%d"))
 
-# Header with logo
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.image("mpt-logo.png", width=400)
-
-st.title("📋 Meeting Feedback")
+# Header with logo and title on same row
+col_title, col_logo = st.columns([3, 1])
+with col_title:
+    st.title("📋 Meeting Feedback")
+with col_logo:
+    st.image("logo-animated.svg", width=150)
 
 if not contact_id:
     st.error("⚠️ Invalid survey link. Please use the link from your email.")

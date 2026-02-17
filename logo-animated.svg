@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <!-- Metro Point Technology Logo - Animated -->
+  <defs>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5C158;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swooshGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E5C158;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Blinking animations for server lights -->
+    <style>
+      @keyframes blink1 {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes blink2 {
+        0%, 100% { opacity: 1; }
+        40% { opacity: 0.3; }
+      }
+      @keyframes blink3 {
+        0%, 100% { opacity: 1; }
+        60% { opacity: 0.3; }
+      }
+      @keyframes blink4 {
+        0%, 100% { opacity: 1; }
+        35% { opacity: 0.3; }
+      }
+      @keyframes blink5 {
+        0%, 100% { opacity: 1; }
+        55% { opacity: 0.3; }
+      }
+      @keyframes blink6 {
+        0%, 100% { opacity: 1; }
+        45% { opacity: 0.3; }
+      }
+      @keyframes blink7 {
+        0%, 100% { opacity: 1; }
+        65% { opacity: 0.3; }
+      }
+      @keyframes blink8 {
+        0%, 100% { opacity: 1; }
+        30% { opacity: 0.3; }
+      }
+      @keyframes blink9 {
+        0%, 100% { opacity: 1; }
+        70% { opacity: 0.3; }
+      }
+
+      .light1 { animation: blink1 2.3s infinite; }
+      .light2 { animation: blink2 1.8s infinite; }
+      .light3 { animation: blink3 2.1s infinite; }
+      .light4 { animation: blink4 1.5s infinite; }
+      .light5 { animation: blink5 2.5s infinite; }
+      .light6 { animation: blink6 1.9s infinite; }
+      .light7 { animation: blink7 2.2s infinite; }
+      .light8 { animation: blink8 1.7s infinite; }
+      .light9 { animation: blink9 2.4s infinite; }
+    </style>
+  </defs>
+
+  <!-- Golden sun/circle -->
+  <circle cx="65" cy="25" r="18" fill="url(#sunGradient)" opacity="0.9"/>
+
+  <!-- Three tech cubes/servers in navy blue -->
+  <!-- Left cube -->
+  <g>
+    <rect x="20" y="35" width="22" height="35" fill="#003B5C" stroke="#8BA5B8" stroke-width="0.5"/>
+    <line x1="25" y1="40" x2="25" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <line x1="37" y1="40" x2="37" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <circle cx="31" cy="45" r="1.5" fill="#D4AF37" class="light1"/>
+    <circle cx="31" cy="52" r="1.5" fill="#D4AF37" class="light2"/>
+    <circle cx="31" cy="59" r="1.5" fill="#D4AF37" class="light3"/>
+  </g>
+
+  <!-- Center cube (taller) -->
+  <g>
+    <rect x="48" y="25" width="22" height="45" fill="#002940" stroke="#8BA5B8" stroke-width="0.5"/>
+    <line x1="53" y1="30" x2="53" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <line x1="65" y1="30" x2="65" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <circle cx="59" cy="35" r="1.5" fill="#D4AF37" class="light4"/>
+    <circle cx="59" cy="42" r="1.5" fill="#D4AF37" class="light5"/>
+    <circle cx="59" cy="49" r="1.5" fill="#D4AF37" class="light6"/>
+    <circle cx="59" cy="56" r="1.5" fill="#D4AF37" class="light7"/>
+  </g>
+
+  <!-- Right cube -->
+  <g>
+    <rect x="76" y="30" width="22" height="40" fill="#003B5C" stroke="#8BA5B8" stroke-width="0.5"/>
+    <line x1="81" y1="35" x2="81" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <line x1="93" y1="35" x2="93" y2="65" stroke="#8BA5B8" stroke-width="0.3"/>
+    <circle cx="87" cy="40" r="1.5" fill="#D4AF37" class="light8"/>
+    <circle cx="87" cy="47" r="1.5" fill="#D4AF37" class="light9"/>
+    <circle cx="87" cy="54" r="1.5" fill="#D4AF37" class="light1"/>
+  </g>
+
+  <!-- Golden swoosh (matching Insurance logo style) -->
+  <path d="M 10 75 Q 60 65, 110 75"
+        fill="none"
+        stroke="url(#swooshGradient)"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+  <!-- Text: METRO POINT -->
+  <text x="130" y="45" font-family="'Georgia', serif" font-size="28" font-weight="bold" fill="#003B5C">METRO POINT</text>
+
+  <!-- Text: TECHNOLOGY, LLC -->
+  <text x="130" y="70" font-family="'Georgia', serif" font-size="16" font-weight="normal" fill="#D4AF37" letter-spacing="2">TECHNOLOGY, LLC</text>
+</svg>
