@@ -20,33 +20,37 @@ st.markdown("""
     .main { padding-top: 1rem; }
     .stButton > button { width: 100%; }
     
-    /* Style multiselect dropdown to be more visible */
-    .stMultiSelect [data-baseweb="select"] {
-        background-color: #f8f9fa;
-        border: 2px solid #dc3545 !important;
+    /* Dropdown popup menu - make it clearly visible */
+    .stMultiSelect [data-baseweb="popover"],
+    div[data-baseweb="popover"] {
+        background-color: #e8e8e8 !important;
+        border: 1px solid #999 !important;
         border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
     
-    /* Dropdown menu styling */
-    .stMultiSelect [data-baseweb="popover"] {
-        background-color: #f8f9fa !important;
-        border: 2px solid #dc3545 !important;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+    /* Option items in dropdown - with checkbox style */
+    .stMultiSelect [role="option"],
+    div[role="option"] {
+        padding: 12px 14px !important;
+        border-bottom: 1px solid #ccc;
+        background-color: #e8e8e8 !important;
     }
     
-    /* Option items in dropdown */
-    .stMultiSelect [role="listbox"] {
-        background-color: #f8f9fa !important;
+    .stMultiSelect [role="option"]:hover,
+    div[role="option"]:hover {
+        background-color: #d0d0d0 !important;
     }
     
-    .stMultiSelect [role="option"] {
-        padding: 10px 12px;
-        border-bottom: 1px solid #e9ecef;
+    /* Checkbox indicators */
+    .stMultiSelect [role="option"]::before {
+        content: "☐ ";
+        font-size: 16px;
     }
     
-    .stMultiSelect [role="option"]:hover {
-        background-color: #ffe6e6 !important;
+    .stMultiSelect [role="option"][aria-selected="true"]::before {
+        content: "☑ ";
+        color: #28a745;
     }
 </style>
 """, unsafe_allow_html=True)
