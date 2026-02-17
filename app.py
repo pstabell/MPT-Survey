@@ -197,9 +197,18 @@ else:
         )
         
         topics_interest = st.multiselect(
-            "Topics you'd like to explore further:",
-            ["Website development", "CRM implementation", "Marketing automation", 
-             "Client portal", "Custom software", "Business consulting", "None at this time"]
+            "Which services could benefit your business?",
+            [
+                "System Optimization",
+                "Integration & Automation",
+                "Custom Software Development",
+                "AI Solutions",
+                "CRM Implementation",
+                "Marketing Automation",
+                "Client Portal",
+                "Technology & Systems Consulting",
+                "None at this time"
+            ]
         )
         
         follow_up_interest = st.radio(
