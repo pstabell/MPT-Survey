@@ -40,7 +40,7 @@ meeting_date = params.get("date", datetime.now().strftime("%Y-%m-%d"))
 # Header with logo
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.image("https://metropointtech.com/wp-content/uploads/2024/12/mpt-logo.png", width=200)
+    st.image("mpt-logo.png", width=200)
 
 st.title("📋 Meeting Feedback")
 
