@@ -73,9 +73,9 @@ meeting_date = params.get("date", datetime.now().strftime("%Y-%m-%d"))
 
 # Header with title and logo side by side using HTML for full control
 st.markdown('''
-    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 30px;">
         <h1 style="margin: 0; font-size: 2.5rem;">📋 Meeting Feedback</h1>
-        <img src="https://metropointtech.com/logo-animated.svg" width="400" style="margin: 0;">
+        <img src="https://metropointtech.com/logo-animated.svg" width="400" style="margin-top: 20px;">
     </div>
 ''', unsafe_allow_html=True)
 
